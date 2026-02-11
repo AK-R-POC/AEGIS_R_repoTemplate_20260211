@@ -1,9 +1,11 @@
 name: Auto Tag Processing
 
 on:
-  push:
-    branches:
-      - main
+  #push:
+  #  branches:
+  #    - main
+  workflow_dispatch: {}
+
 
 permissions:
   contents: write # リポジトリにタグをプッシュするために必要
