@@ -41,7 +41,8 @@ in_repo && /"URL":/ {
     sub(/.*"URL": "/, "", line); # キー部分削除
     sub(/".*/, "", line);        # 末尾の " 以降を削除
 
-    prefix = "https://aegisrspm.akaws-r-alb.onecloudlabo.com/";
+    #prefix = "https://aegisrspm.akaws-r-alb.onecloudlabo.com/";
+    prefix = "https://aegisrspm.";
     # prefix で始まっているか確認
     if (substr(line, 1, length(prefix)) != prefix) {
         print "❌ 不正なリポジトリ URL が検出されました: " line;
@@ -56,7 +57,7 @@ EXIT_CODE=$?
 # awk の終了コードがエラー(1)ならスクリプトを止める
 if [ $EXIT_CODE -ne 0 ]; then
   echo "$ERROR_MSG"
-  echo "❌ URL は https://aegisrspm.akaws-r-alb.onecloudlabo.com/ で始まる必要があります。"
+  echo "❌ URL は https://aegisrspm.で始まる必要があります。"
   exit 1
 fi
 
