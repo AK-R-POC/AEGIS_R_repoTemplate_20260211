@@ -9,11 +9,11 @@
   ssh-keygen -t ed25519 -C "atsushi.kitagawa@dxc.com" or RStudio GUI
 - Keep secret key on your home and copy public key and register to GitHub(as your SSH key)
 - Register GitHub username and email address as follows.
-  #e.g.
-  git config --global user.email "atsushi.kitagawa@dxc.com"
-  git config --global user.name "atsurinange"
-  git config --global core.hooksPath .githooks
-  git config --global pull.rebase false
+  #e.g.  
+  git config --global user.email "atsushi.kitagawa@dxc.com"  
+  git config --global user.name "atsurinange"  
+  git config --global core.hooksPath .githooks  
+  git config --global pull.rebase false  
   
 3) Create a new R project(reporting activity) in mode of version control and using git
 - [Important!] Input URL as SSH
