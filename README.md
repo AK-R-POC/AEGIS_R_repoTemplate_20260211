@@ -4,8 +4,8 @@
 - apply a rule to main branch which prohibits to push to main directly
 
 2) Update "Global Options" to use GIT and create a SSH key for RStudio user(linux user)
-- Create your SSH key
-  #e.g. 
+- Create your SSH key  
+  #e.g.  
   ssh-keygen -t ed25519 -C "atsushi.kitagawa@dxc.com" or RStudio GUI
 - Keep secret key on your home and copy public key and register to GitHub(as your SSH key)
 - Register GitHub username and email address as follows.  
